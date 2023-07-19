@@ -14,7 +14,7 @@ const TodoList = () => {
     axios
       .get("https://jsonplaceholder.typicode.com/todos")
       .then((response) => {
-        setTodos(response.data.slice(0, 5)); // Obtener solo las primeras 5 tareas por simplicidad
+        setTodos(response.data.slice(0, 5));
       })
       .catch((error) => {
         console.error("Error al obtener datos:", error);
